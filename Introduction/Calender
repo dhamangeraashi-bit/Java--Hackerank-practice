@@ -1,0 +1,35 @@
+// core logic for CALENDER PROGRAM
+import java.io.*;
+import java.math.*;
+import java.security.*;
+import java.text.*;
+import java.util.*;
+import java.util.concurrent.*;
+import java.util.regex.*;
+import java.util.*;
+class Result {
+     public static String findDay(int month, int day, int year) {
+        int t=0;
+        //counting days for year, month and days 
+        for(int i=0;i<year;i++)
+        {
+            if(i%400==0 || (i%4==0 && i%100!=0))
+            {
+                t+=366;
+            }
+            else
+            t+=365;
+        }
+        int []days_month={31,28,31,30,31,30,31,31,30,31,30,31};
+        //days of previous months
+        for(int i=0;i<month-1;i++){
+        t+= days_month[i];}
+            if(month>2 && ((year%400==0)||(year%4==0 && year%100!=0)))
+            t++;
+        t+=day-1;
+        String[] week={ "SATURDAY", "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY"};
+        return week[t%7];
+    }
+
+}
+
