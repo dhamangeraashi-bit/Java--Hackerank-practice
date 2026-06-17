@@ -1,4 +1,4 @@
-**# Java Practice **
+**## Java Practice **
 This repository contains my Java Practice solutions from HackerRank.
 
 **## Topics Covered**
