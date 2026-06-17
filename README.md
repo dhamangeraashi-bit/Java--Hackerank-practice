@@ -1,2 +1,11 @@
-# Java--Hackerank-practice
-My java practice solutions from Hackerrank - understood and solved 
+**# Java Practice **
+This repository contains my Java Practice solutions from HackerRank.
+
+**## Topics Covered**
+- Data Types
+- Loops
+- Strings
+- OOP
+- Collections
+
+**I upload solutions after successfully passing all test cases.**
